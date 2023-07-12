@@ -1,0 +1,80 @@
+.WelcomePage {
+    width: 393px;
+    height: 852px;
+    position: relative;
+    background: #B5C691;
+  }
+  
+  .BoutonJouer {
+    width: 206px;
+    height: 72px;
+    left: 93px;
+    top: 578px;
+    position: absolute;
+  }
+  
+  .Cadre {
+    width: 206px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #B97D3C;
+    border-radius: 15px;
+  }
+  
+  .Jouer {
+    width: 98px;
+    height: 43px;
+    left: 54px;
+    top: 14px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: LT Woodchuck;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+  
+  .BouttonRGles {
+    width: 115px;
+    height: 42px;
+    left: 139px;
+    top: 764px;
+    position: absolute;
+  }
+  
+  .RGles {
+    left: 31px;
+    top: 10px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: LT Woodchuck;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+  
+  .Titre {
+    width: 217px;
+    height: 65px;
+    left: 87px;
+    top: 78px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: LT Woodchuck;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+  
+  .Screenshot20230708At13231 {
+    width: 219px;
+    height: 213px;
+    left: 87px;
+    top: 302px;
+    position: absolute;
+  }
