@@ -1,82 +1,110 @@
-.WelcomePage {
-    width: 393px;
-    height: 852px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: #B5C691;
-  }
-  
-  .BoutonJouer {
-    width: 206px;
-    height: 72px;
-    left: 93px;
-    top: 578px;
-    position: absolute;
-  }
-  
-  .Cadre {
-    width: 206px;
-    height: 72px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background: #B97D3C;
-    border-radius: 15px;
-  }
-  
-  .Jouer {
-    width: 98px;
-    height: 43px;
-    left: 54px;
-    top: 14px;
-    position: absolute;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    font-family: LT Woodchuck;
-    font-weight: 700;
-    word-wrap: break-word;
-  }
-  
-  .BouttonRegles {
-    width: 115px;
-    height: 42px;
-    left: 139px;
-    top: 764px;
-    position: absolute;
-  }
-  
-  .RGles {
-    left: 31px;
-    top: 10px;
-    position: absolute;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    font-family: LT Woodchuck;
-    font-weight: 700;
-    word-wrap: break-word;
-  }
-  
-  .Titre {
-    width: 217px;
-    height: 65px;
-    left: 87px;
-    top: 78px;
-    position: absolute;
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    font-family: LT Woodchuck;
-    font-weight: 700;
-    word-wrap: break-word;
-  }
-  
-  .Screenshot20230708At13231 {
-    width: 219px;
-    height: 213px;
-    left: 87px;
-    top: 302px;
-    position: absolute;
-  }
+﻿/* Cross pages stye */
+
+body {
+  background-color: rgba(181,198,145,255);
+  font-family: Optima;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  max-width: 450px;
+  margin: 5vh auto;
+  width: 100%;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.displayItemsInline {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-family: Optima;
+  color: white;
+}
+
+.paragraph {
+  size: 10em;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+input[type=text] {
+ border-radius: 0.5em;
+ border-color: white;
+}
+
+/* Buttons */
+
+.positiveButton {
+  background-color: rgba(185,125,59,255);
+  border-radius: 0.5em;
+  font-size: 1.5em;
+  border: none;
+  color: white;
+  padding: 0.5em;
+  transition : background-color 0.5s ease-out 25ms;
+  font-family: Optima;
+}
+
+.positiveButton:hover {
+  background-color: rgba(132,138,74,255);
+}
+
+.neutralButton {
+  background-color: grey;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+  border: none;
+  color: white;
+  padding: 0.8em;
+  font-family: Optima;
+}
+
+.previousButton {
+  content: url(Ressources/previousButton.svg);
+  width: auto;
+  padding-right: 3em;
+}
+
+.nextButton {
+  content: url(Ressources/nextButton.svg);
+  width: auto;
+  padding-left: 3em;
+  text-align:;
+}
+
+.minusButton {
+  content: url(Ressources/minusButton.svg);
+}
+
+.plusButton {
+  content: url(Ressources/plusButton.svg);
+}
+
+
+/* Index.html style */
+
+.welcomeLogo {
+  width: 14em;
+  margin: 0.5em;
+}
+
+.welcomeImage {
+  width: 13em;
+  margin: 1em;
+}
+
+/* gameSetup style */
+
+.playerAmountSelector {
+  margin: 1em;
+}
+
+/* playersSetup style */
+
+.submitPlayersSetup {
+  size: 10%;
+}
