@@ -1,18 +1,33 @@
 ﻿/* Cross pages stye */
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+html, body{
+  font-size: calc(.75rem + 2vh);
+}
 
 body {
   background-color: rgba(181,198,145,255);
   font-family: Optima;
   text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* max-width: 450px; */
+  width: 100%;
+}
+
+.main_wraper {
+  height : 100vh;
+  width: 100vw;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  color: white;
-  max-width: 450px;
-  margin: 5vh auto;
-  width: 100%;
+  justify-content: space-around;
   align-items: center;
-  overflow-y: auto;
 }
 
 .displayItemsInline {
@@ -41,7 +56,7 @@ input[type=text] {
 .positiveButton {
   background-color: rgba(185,125,59,255);
   border-radius: 0.5em;
-  font-size: 1.5em;
+  font-size: 0.9rem;
   border: none;
   color: white;
   padding: 0.5em;
@@ -56,7 +71,7 @@ input[type=text] {
 .neutralButton {
   background-color: grey;
   border-radius: 0.5em;
-  font-size: 0.8em;
+  font-size: 0.5rem;
   border: none;
   color: white;
   padding: 0.8em;
@@ -88,13 +103,11 @@ input[type=text] {
 /* Index.html style */
 
 .welcomeLogo {
-  width: 14em;
-  margin: 0.5em;
+  width: 10rem;
 }
 
 .welcomeImage {
-  width: 13em;
-  margin: 1em;
+  width: 9rem;
 }
 
 /* gameSetup style */
