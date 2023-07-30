@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-html, body{
+html, body {
   font-size: calc(.75rem + 2vh);
 }
 
@@ -35,14 +35,14 @@ body {
   flex-direction: row;
 }
 
-.title {
+h1 {
   font-family: Optima;
-  color: white;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
 }
 
 .paragraph {
-  size: 10em;
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -80,15 +80,12 @@ input[type=text] {
 
 .previousButton {
   content: url(Ressources/previousButton.svg);
-  width: auto;
-  padding-right: 3em;
+  padding-right: 3.5rem;
 }
 
 .nextButton {
   content: url(Ressources/nextButton.svg);
-  width: auto;
-  padding-left: 3em;
-  text-align:;
+  padding-left: 3.5rem;
 }
 
 .minusButton {
@@ -99,6 +96,11 @@ input[type=text] {
   content: url(Ressources/plusButton.svg);
 }
 
+.errorMessage {
+  font-size: 1rem;
+  color: rgb(234, 118, 92);
+  font-style: italic;
+}
 
 /* Index.html style */
 
@@ -113,7 +115,7 @@ input[type=text] {
 /* gameSetup style */
 
 .playerAmountSelector {
-  margin: 1em;
+  margin: 1.5rem;
 }
 
 /* playersSetup style */
