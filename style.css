@@ -1,4 +1,19 @@
 ﻿/* Cross pages stye */
+
+@keyframes buttonTranslate {
+  form {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+
+  to {
+    transform: translateX(0%)
+  }
+}
+
+
 *{
   padding:0;
   margin:0;
@@ -41,14 +56,33 @@ h1 {
   font-size: 2rem;
 }
 
+h3 {
+  font-size: 0.7rem;
+}
+
 .paragraph {
   font-size: 2rem;
   font-weight: bold;
 }
 
 input[type=text] {
- border-radius: 0.5em;
+ border-radius: 7px;
+ border: 0.5px;
+ border-style: solid;
  border-color: white;
+ background-color: rgba(255,255,255,0.08);
+ margin: 0.3rem;
+ width: 60%;
+ height: 0.8rem;
+}
+
+input[type=text]:focus {
+}
+
+.errorMessage {
+  font-size: 0.8rem;
+  color: rgb(234, 118, 92);
+  font-style: italic;
 }
 
 /* Buttons */
@@ -88,6 +122,10 @@ input[type=text] {
   padding-left: 3.5rem;
 }
 
+.suggestedButton {
+  animation: buttonTranslate 5s ease-in-out infinite;
+}
+
 .minusButton {
   content: url(Ressources/minusButton.svg);
 }
@@ -96,10 +134,8 @@ input[type=text] {
   content: url(Ressources/plusButton.svg);
 }
 
-.errorMessage {
-  font-size: 1rem;
-  color: rgb(234, 118, 92);
-  font-style: italic;
+.inactiveButton {
+  opacity: 0.5;
 }
 
 /* Index.html style */
@@ -121,5 +157,39 @@ input[type=text] {
 /* playersSetup style */
 
 .submitPlayersSetup {
-  size: 10%;
+  height: 2rem;
+  width: 70%;
+  font-size: 1rem;
+  margin: 0.5rem;
+  font-style: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formSubmitted {
+  opacity: 0.5;
+}
+
+.roleContainer {
+  position: relative;
+}
+
+.squareShape {
+  width: 8rem;
+  height: 5rem;
+  background-color: #D9D9D9;
+  filter: blur(15px);
+}
+
+.roleIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
 }
