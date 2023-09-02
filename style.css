@@ -221,3 +221,11 @@ form {
 svg {
   z-index: 1;
 }
+
+.reloadButton {
+  display: inline-block;
+  align-self: flex-end;
+}
+
+circle {
+}
