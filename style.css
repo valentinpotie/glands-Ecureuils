@@ -1,11 +1,27 @@
-/* Fonts */
+/* 
+
+FFFFF   OOO   N   N  TTTTT  SSSS
+F      O   O  NN  N    T    S
+FFFF   O   O  N N N    T    SSSS
+F      O   O  N  NN    T       S
+F       OOO   N   N    T    SSSS
+
+*/
 
 @font-face{
   font-family: "LTWoodchuck-Bold";
   src: url(Ressources/Fonts/LTWoodchuck-Bold.ttf);
   }
 
-/* Cross pages stye */
+/*
+
+CCCCC  RRRR     OOO  SSSS  SSSS    PPPP    A    GGGG  EEEEE SSSS
+C      R   R   O   O  S     S      P  P   A A   G     E     S
+C      RRRR    O   O  SSSS  SSSS   PPPP  AAAAA  G  GG EEEE  SSSS
+C      R  R    O   O     S     S   P     A    A G   G E        S
+CCCCC  R   R    OOO  SSSS  SSSS    P     A    A GGGGG EEEEE SSSS
+
+*/
 
 @keyframes buttonTranslate {
   form {
@@ -46,24 +62,31 @@ body {
 }
 
 .main_wraper {
-  height : 85vh;
+  height : 100vh;
   width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 0.8rem;
 }
 
 .displayItemsInline {
   display: flex;
   flex-direction: row;
+  padding: 0.3rem;
 }
 
 h1 {
-  font-family: Optima;
+  font-family: LTWoodchuck-Bold;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-family: LTWoodchuck-Bold;
+  font-size: 1.8rem;
 }
 
 h3 {
@@ -97,14 +120,22 @@ input[type=text]:focus {
 }
 
 .errorMessage {
+  font-family: LTWoodchuck-bold;
   font-size: 0.8rem;
   color: rgb(234, 118, 92);
-  font-style: italic;
 }
 
 
 
-/* Buttons */
+/* 
+
+BBB     U   U  TTTTT  TTTTT  OOOOO  N   N  SSSS
+B  BB   U   U    T      T    O   O  NN  N  S
+BBB     U   U    T      T    O   O  N N N  SSSS
+B  BB   U   U    T      T    O   O  N  NN     S
+BBB      UUU     T      T    OOOOO  N   N  SSSS
+
+*/
 
 .positiveButton {
   background-color: rgba(185,125,59,255);
@@ -188,9 +219,15 @@ input[type=text]:focus {
 }
 
 
+/* 
 
+IIIII  N   N  DDD   EEEEE  X   X     H   H  TTTTT  M   M  L
+  I    NN  N  D  D  E       X X      H   H    T    MM MM  L
+  I    N N N  D   D EEEE     X       HHHHH    T    M M M  L
+  I    N  NN  D  D  E       X X      H   H    T    M   M  L
+IIIII  N   N  DDD   EEEEE  X   X     H   H    T    M   M  LLLLL
 
-/* Index.html style */
+*/
 
 .welcomeLogo {
   width: 10rem;
@@ -202,7 +239,15 @@ input[type=text]:focus {
 
 
 
-/* gameSetup style */
+/* 
+
+GGGGG    A    M   M  EEEEE     SSSS  EEEEE  TTTTT  U   U  PPPP 
+G       A A   MM MM  E         S     E        T    U   U  P   P
+G  GG  AAAAA  M M M  EEEE      SSSS  EEEE     T    U   U  PPPP 
+G   G  A   A  M   M  E            S  E        T    U   U  P
+ GGGG  A   A  M   M  EEEEE     SSSS  EEEEE    T     UUU   P
+
+ */
 
 .playerAmountSelector {
   margin: 1.5rem;
@@ -210,7 +255,15 @@ input[type=text]:focus {
 
 
 
-/* playersSetup style */
+/* 
+
+PPPP   L       A   Y   Y EEEEE  RRRR      SSSS  EEEEE  TTTTT  U   U  PPPP
+P   P  L      A A   Y Y  E      R   R     S     E        T    U   U  P   P
+PPPP   L     AAAAA   YY  EEEE   RRRR      SSSS  EEEE     T    U   U  PPPP
+P      L     A   A    Y  E      R  R         S  E        T    U   U  P
+P      LLLLL A   A    Y  EEEEE  R   R     SSSS  EEEEE    T     UUU   P
+
+*/
 
 .submitPlayersSetup {
   height: 1rem;
@@ -230,7 +283,7 @@ form {
   opacity: 0.5;
 }
 
-.roleContainer {
+.roleContainerPlayerSetup {
   position: relative;
 }
 
@@ -246,14 +299,21 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
-  height: 50%;
+  height: 60%;
 }
 
 
 
 
-/* Night style */
+/*  
+
+N   N  III  GGGG  H   H  TTTTT
+NN  N   I   G     H   H    T  
+N N N   I   G  GG HHHHH    T  
+N  NN   I   G   G H   H    T  
+N   N  III  GGGG  H   H    T    
+
+*/
 
 .nightBody {
   background-color: rgba(58, 63, 106, 1);
@@ -279,24 +339,27 @@ svg {
   z-index: 1;
 }
 
-.reloadButton {
+.reloadButtonNight {
   display: inline-block;
   align-self: flex-end;
 }
 
-circle {
-}
+/*  
 
+V     V  OOO  TTTTT  EEEEE
+V     V O   O   T    E    
+V     V O   O   T    EEEE 
+ V   V  O   O   T    E    
+  VVV    OOO    T    EEEEE
 
+*/
 
-
-/* Vote style */
-
-.gridContainer {
+#gridContainer {
   display: grid;
   padding: 1rem;
   grid-template-columns: auto auto;
-  gap: 2.5rem;
+  column-gap: 1rem;
+  row-gap: 3rem;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -308,7 +371,6 @@ circle {
   align-items: center;
   width: 5rem;
   height: 5rem;
-
 }
 
 .squareShapeNarrow {
@@ -334,6 +396,7 @@ circle {
   align-items: center;
   padding-top: 20px;
   margin-bottom: -50px;
+  position: relative;
 }
 
 .nameButton {
@@ -351,14 +414,26 @@ circle {
   width: 4.5rem;
 }
 
+.reloadWraper {
+  width: 13rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .reload {
   font-family: LTWoodchuck-Bold;
   font-size: 0.5em;
-  border: solid;
+  border: solid white;
   border-radius: 15px;
   margin: 0.5em;
-  padding: 0.1em 0.5em;
-  align-items: end;
+  padding: 0.1em 0.8em;
+  color: rgba(181,198,145,255); /* Rendre le texte transparent */
+  text-shadow:
+    -1px -1px 0 #FFF,  
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF; 
 }
 
 .eliminationCandidate {
@@ -368,13 +443,22 @@ circle {
 }
 
 .eliminateButton {
+  position: absolute;     /* Positionnement absolu par rapport à cardContainer */
+  top: 0;                /* Fixe le bouton à la bordure supérieure */
+  left: 50%;             /* Centrer horizontalement */
+  transform: translate(-50%, -50%); /* Centrer le bouton exactement par rapport à son centre */
+  height: 1rem;
+  border: none;
+  color: white;
+  height: 1rem;
+  font-family: LTWoodchuck-Bold;
+  font-size: 0.6rem;
   z-index: 2;
-  margin-bottom: 240px;
-  padding: 0px;
   background-color: #DF8080;
   width: 80%;
   border-radius: 15px;
 }
+
 
 #voteConfirmationPopin {
   z-index: 3;
@@ -421,7 +505,7 @@ circle {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 50%;
+  width: 14rem;
   height: 50%;
   transform: translate(-50%, -50%);
   justify-content: space-around;
@@ -437,6 +521,9 @@ circle {
 }
 
 #killedPlayerIcon {
-  width: 6rem;
-  height: 3rem;
+  height: 5rem;
+}
+
+#killedPlayerPopinText, #endOfGamePopinText {
+  width: 80%;
 }
