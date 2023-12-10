@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainWraper">
+        <div id="form">
+            <h1>TravelMate - Carpooling cost estimate</h1>
+            <p>Enter the distance of your trip (in Km):</p>
+            <input type="number" placeholder="ex: 50Km" min="1" id="distance">
+
+            <p>Enter the number of people in the car (driver included):</p>
+            <input type="number" placeholder="ex: 3" min="1" max="9" id="people">
+
+            <p title="Help
+            Trip Cost Calculation Explained
+            Fuel Costs: Estimated from average fuel prices and standard fuel consumption rates.
+            Toll Charges: Based on average toll rates in Australia.
+            Maintenance: Includes average vehicle maintenance costs, pro-rated per kilometer.
+            Note: This is an estimation. Actual costs may vary.">Cost estimation per Km (in $ AUD):</p>
+
+            <input type="range" min="15" max="70" value="33" id="costPerKm"><span id="costDisplayed">0.33 $</span><br>
+            <div id="result">
+            <button onclick="calculate()">Estimate the costs</button>
+            
+            <p id="resultSentence">Each passenger should give NaN$ to the driver to divide the costs of the trip</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        function calculate (){
+            let distance = document.getElementById("distance").value;
+            console.log(distance);
+            let people = document.getElementById("people").value;
+            console.log(people);
+            let costPerKm = document.getElementById("costPerKm").value;
+            console.log(costPerKm);
+            let costPerPerson = distance * costPerKm / people /100; 
+            console.log(costPerPerson);
+            let result = document.getElementById("resultSentence");
+            result.innerHTML = "Each passenger should give " + costPerPerson + "$ to the driver to divide the costs of the trip";
+        }
+        let inputCost = document.getElementById("costPerKm");
+        let costDisplayed = document.getElementById("costDisplayed");
+
+        inputCost.addEventListener("input", function displayCost () {
+            costDisplayed.innerHTML = (this.value/100).toFixed(2) + " $";
+        })
+    </script>
+</body>
+</html>
