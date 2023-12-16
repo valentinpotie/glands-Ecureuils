@@ -16,19 +16,18 @@
 
             <p>Enter the number of people in the car (driver included):</p>
             <input type="number" placeholder="ex: 3" min="1" max="9" id="people">
-
-            <p title="Help
-            Trip Cost Calculation Explained
-            Fuel Costs: Estimated from average fuel prices and standard fuel consumption rates.
-            Toll Charges: Based on average toll rates in Australia.
-            Maintenance: Includes average vehicle maintenance costs, pro-rated per kilometer.
-            Note: This is an estimation. Actual costs may vary.">Cost estimation per Km (in $ AUD):</p>
-
-            <input type="range" min="15" max="70" value="33" id="costPerKm"><span id="costDisplayed">0.33 $</span><br>
+            <div class="costEstimation" style="display: none;">
+                <p title="Help
+                Trip Cost Calculation Explained
+                Fuel Costs: Estimated from average fuel prices and standard fuel consumption rates.
+                Toll Charges: Based on average toll rates in Australia.
+                Maintenance: Includes average vehicle maintenance costs, pro-rated per kilometer.
+                Note: This is an estimation. Actual costs may vary.">Cost estimation per Km (in $ AUD):</p>
+                <input type="range" min="15" max="70" value="33" id="costPerKm"><span id="costDisplayed">0.33 $</span><br>
+            </div>
             <div id="result">
-            <button onclick="calculate()">Estimate the costs</button>
-            
-            <p id="resultSentence"></p>
+                <button onclick="calculate()">Estimate the costs</button>
+                <p id="resultSentence"></p>
             </div>
         </div>
     </div>
