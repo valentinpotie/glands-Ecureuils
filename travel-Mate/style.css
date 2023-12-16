@@ -34,8 +34,11 @@
     align-items: baseline;
     background-color: rgba(226,79,42,255);
     padding: 1rem;
-    border-radius: 1rem;
-    
+    border-radius: 8px;
+    border-top: 4px solid #3b8075;
+    padding: 24px 32px;
+    box-shadow: 0 2px 4px #8896c833;
+    max-width: 700px;
 }
 
 h1 {
