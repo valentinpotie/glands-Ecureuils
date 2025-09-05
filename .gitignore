@@ -1,0 +1,13 @@
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Logs et temporaires
+*.log
+*.tmp
+*.swp
+
+# Node.js
+node_modules/
